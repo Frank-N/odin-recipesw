@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.container {
+    background-color: white;
+    width: 870px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recipe-img {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.main-text {
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.ingredients, li {
+    margin: 10px;
+}
+
+.steps h3, .steps ol {
+    margin: 10px;
+}
+
+.button {
+    text-align: right;
+}
+
+a {
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: lightblue;
+    padding: 10px;
+}
