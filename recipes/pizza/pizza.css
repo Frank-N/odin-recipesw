@@ -5,29 +5,49 @@
     font-family: sans-serif;
 }
 
-body {
+html, body {
     background-color: gainsboro;
+    height: 100%;
+}
+
+.papa {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
     background-color: white;
     width: 870px;
-    margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
+    margin-top: 30px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.main-text {
+    width: auto;
 }
 
 .recipe-img {
     width: 300px;
     height: 300px;
-    display: inline-block;
 }
 
-.main-text {
-    display: inline-block;
-    width: 500px;
-    vertical-align: top;
-    margin: 10px;
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .ingredients, li {
@@ -39,7 +59,10 @@ body {
 }
 
 .button {
-    text-align: right;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 }
 
 a {
