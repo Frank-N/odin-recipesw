@@ -17,45 +17,12 @@ html, body {
 
 .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 1;
     flex-wrap: wrap;
     background-color: white;
     width: 870px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     margin-top: 30px;
-}
-
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.main-text {
-    width: auto;
-}
-
-.recipe-img {
-    width: 300px;
-    height: 300px;
-}
-
-
-.section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.ingredients, li {
-    margin: 10px;
-}
-
-.steps h3, .steps ol {
-    margin: 10px;
 }
 
 .button {
@@ -71,4 +38,37 @@ a {
     color: white;
     background-color: lightblue;
     padding: 10px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.recipe-img {
+    width: 300px;
+    height: 300px;
+}
+
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.ingredients, li, .steps h3, .steps ol {
+    margin: 10px;
 }
