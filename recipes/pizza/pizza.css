@@ -18,11 +18,11 @@ html, body {
 .container {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     background-color: white;
-    width: 870px;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 30px;
+    margin: 50px;
 }
 
 .button {
@@ -48,11 +48,13 @@ a {
 
 
 .main-text {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 520px;
     flex-grow: 1;
     text-align: justify;
+    width: 40%;
+    min-width: 300px;
 }
 
 .recipe-img {

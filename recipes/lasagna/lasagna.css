@@ -5,41 +5,31 @@
     font-family: sans-serif;
 }
 
-body {
+html, body {
     background-color: gainsboro;
+    height: 100%;
+}
+
+.papa {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
     background-color: white;
-    width: 870px;
-    margin: 10px auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-}
-
-.recipe-img {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-}
-
-.main-text {
-    display: inline-block;
-    width: 500px;
-    vertical-align: top;
-    margin: 10px;
-}
-
-.ingredients, li {
-    margin: 10px;
-}
-
-.steps h3, .steps ol {
-    margin: 10px;
+    margin: 50px;
 }
 
 .button {
-    text-align: right;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 }
 
 a {
@@ -48,4 +38,39 @@ a {
     color: white;
     background-color: lightblue;
     padding: 10px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.main-text {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: justify;
+    width: 40%;
+    min-width: 300px;
+}
+
+.recipe-img {
+    width: 300px;
+    height: 300px;
+}
+
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.ingredients, li, .steps h3, .steps ol {
+    margin: 10px;
 }
